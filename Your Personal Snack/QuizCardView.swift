@@ -9,7 +9,10 @@ import SwiftUI
 
 struct QuizCardView: View {
   @Binding var quiz: Quiz
+  @Binding var answers: [Double]
   @State var selection: Option?
+
+  @State var rowColor = Color.orange
 
   var body: some View {
     VStack {
@@ -19,7 +22,7 @@ struct QuizCardView: View {
           Text(quiz.question)
             .fontWeight(.bold).font(.title).multilineTextAlignment(.center)
         }.frame(width: 280, height: 180)
-          .background(LinearGradient(colors: [.pink, .purple], startPoint: .top, endPoint: .bottom))
+          .background(LinearGradient(colors: [.purple, .pink], startPoint: .topLeading, endPoint: .bottomTrailing))
           .foregroundColor(.white)
           .cornerRadius(20).padding(.top, 24)
 
@@ -34,8 +37,14 @@ struct QuizCardView: View {
             Text(option.description)
               .font(.caption)
               .fontWeight(.light).opacity(0.8)
+
+              .onTapGesture {
+                addScore(quiz: quiz, selectedOption: option, answers: &answers)
+                selection = option
+                rowColor = Color.purple
+              }
           }
-          .listRowBackground(Color.orange)
+          .listRowBackground(self.selection == option ? Color.purple : Color.white).foregroundColor(self.selection == option ? Color.white : Color.black)
         }.scrollContentBackground(.hidden).background(Color.white.opacity(0)).cornerRadius(12)
       }.background(.thinMaterial).frame(width: 330, height: 680).cornerRadius(20).overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.white, lineWidth: 2))
     }
@@ -47,7 +56,7 @@ struct QuizCardView: View {
       QuizCardView(
         quiz: .constant(
           quiz1
-        )
+        ), answers: .constant([0.0, 0.0, 0.0, 0.0, 0.0])
       )
     }
   }

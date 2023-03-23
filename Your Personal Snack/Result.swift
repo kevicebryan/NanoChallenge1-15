@@ -35,9 +35,27 @@ var lays = Result(id: 2,
 var balado = Result(id: 3,
                     snack: "Stick Balado",
                     snackImage: Image("stick balado"), factImage: Image("fact-balado"),
-                    body: "Open-minded dan berani ambil resiko. Selain itu kamu juga strong dan independent! Biasanya penuh dengan energi.", bodyImage: Image("body-balado"))
+                    body: "Open-minded dan berani ambil resiko. Selain itu kamu juga strong dan independent! Biasanya penuh dengan energi.", bodyImage: Image("body-cheetos"))
 
 var kopiko = Result(id: 4,
                     snack: "Kopiko",
                     snackImage: Image("kopiko"), factImage: Image("fact-kopiko"),
                     body: "Kamu orang yang inovatif dan juga kreatif, kamu juga gampang mengutarakan opini. Tapi kamu cenderung ansos!", bodyImage: Image("body-kopiko"))
+
+func getUserSnack(answers: [Double], results: [Result], userSnack: inout Result) {
+  var max = 0.0
+  var maxIdx = 0
+  for answer in answers where answer > max {
+    max = answer
+    maxIdx = answers.firstIndex(of: max) ?? maxIdx
+  }
+  userSnack = results[maxIdx]
+  print("Congratulations your snack is: \(userSnack.snack)")
+}
+
+func addScore(quiz: Quiz, selectedOption: Option, answers: inout [Double]) {
+  var answer = selectedOption.value
+  var weight = quiz.weight
+  answers[answer] += weight
+  print("added \(weight) to \(answers)")
+}

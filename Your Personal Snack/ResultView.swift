@@ -45,7 +45,7 @@ struct ResultView: View {
             Text("Edwin").padding()
           }.frame(width: 361, height: 50)
 
-        }.background(.ultraThinMaterial).cornerRadius(32).overlay(RoundedRectangle(cornerRadius: 30).stroke(Color.white, lineWidth: 1)).padding(.top, 12).foregroundColor(.white).font(.title3)
+        }.background(LinearGradient(colors: [.purple, .pink], startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(32).overlay(RoundedRectangle(cornerRadius: 30).stroke(Color.white, lineWidth: 1)).padding(.top, 12).foregroundColor(.white).font(.title3)
       }
     }
     .navigationTitle("Hi, \(username) kamu seperti...").font(.largeTitle)

@@ -16,7 +16,6 @@ struct ContentView: View {
   /// 2 --> Lays
   /// 3 --> Balado
   /// 4 --> Kopiko
-  ///
   var quizzes: [Quiz] = [quiz1, quiz2, quiz3, quiz4, quiz5]
 
   var body: some View {
