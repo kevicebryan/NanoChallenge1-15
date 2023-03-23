@@ -34,7 +34,7 @@ var lays = Result(id: 2,
 
 var balado = Result(id: 3,
                     snack: "Stick Balado",
-                    snackImage: Image("stick balado"), factImage: Image("fact-balado"),
+                    snackImage: Image("stick balado"), factImage: Image("fact-stickbalado"),
                     body: "Open-minded dan berani ambil resiko. Selain itu kamu juga strong dan independent! Biasanya penuh dengan energi.", bodyImage: Image("body-cheetos"))
 
 var kopiko = Result(id: 4,
@@ -54,8 +54,10 @@ func getUserSnack(answers: [Double], results: [Result], userSnack: inout Result)
 }
 
 func addScore(quiz: Quiz, selectedOption: Option, answers: inout [Double]) {
-  var answer = selectedOption.value
-  var weight = quiz.weight
-  answers[answer] += weight
-  print("added \(weight) to \(answers)")
+  answers[selectedOption.value] += quiz.weight
+  print("added \(quiz.weight) to \(answers)")
+}
+
+func resetAnswer(answers: inout [Double]) {
+  answers = [0.0, 0.0, 0.0, 0.0, 0.0]
 }

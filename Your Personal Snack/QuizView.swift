@@ -9,8 +9,8 @@ import SwiftUI
 
 struct QuizView: View {
   @Binding var username: String
+  @Binding var answers: [Double]
   @State var quizzes = [quiz1, quiz2, quiz3, quiz4, quiz5]
-  @State var answers = [0.0, 0.0, 0.0, 0.0, 0.0]
   @State var results = [bengbeng, nanonano, lays, balado, kopiko]
   @State var userSnack = lays
 
@@ -42,6 +42,7 @@ struct QuizView: View {
 
 struct QuizView_Previews: PreviewProvider {
   static var previews: some View {
-    QuizView(username: .constant("Kevin"))
+    QuizView(username: .constant("Kevin"),
+             answers: .constant([0.0, 0.0, 0.0, 0.0, 0.0]))
   }
 }

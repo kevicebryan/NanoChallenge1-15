@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
   @State var username: String = ""
   @State private var animationAmount: CGFloat = 1
+  @State var answers = [0.0, 0.0, 0.0, 0.0, 0.0]
 
   var body: some View {
     NavigationView {
@@ -41,7 +42,9 @@ struct HomeView: View {
           }.padding(.vertical, 20.0).padding(.bottom, 40)
 
           VStack {
-            NavigationLink(destination: QuizView(username: $username)) {
+            NavigationLink(destination: QuizView(username: $username, answers: $answers).onAppear {
+              resetAnswer(answers: &answers)
+            }) {
               Image("doritos-play")
                 .scaleEffect(animationAmount)
                 .animation(.linear(duration: 0.15).delay(0.2).repeatForever(autoreverses: true), value: animationAmount)
