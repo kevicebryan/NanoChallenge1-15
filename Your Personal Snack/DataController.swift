@@ -11,5 +11,11 @@ import Foundation
 class DataController: ObservableObject {
   let container = NSPersistentContainer(name: "PersonalSnack")
 
-  init() {}
+  init() {
+    container.loadPersistentStores {
+      _, error in if let error = error {
+        print("Core data failed to load! \(error.localizedDescription)")
+      }
+    }
+  }
 }

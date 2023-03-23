@@ -14,6 +14,8 @@ struct QuizView: View {
   @State var results = [bengbeng, nanonano, lays, balado, kopiko]
   @State var userSnack = lays
 
+  @Environment(\.managedObjectContext) var moc
+
   var body: some View {
     ZStack {
       Color("bgOrange").edgesIgnoringSafeArea(.all)
@@ -30,6 +32,11 @@ struct QuizView: View {
 
         NavigationLink(destination: ResultView(username: $username, snack: $userSnack).onAppear {
           getUserSnack(answers: answers, results: results, userSnack: &userSnack)
+          let player = Player(context: moc)
+          player.id = UUID()
+          player.username = username
+          player.snack = userSnack.snack
+          try? moc.save()
         }) {
           HStack {
             Text("Know my result").frame(width: 160, height: 40)

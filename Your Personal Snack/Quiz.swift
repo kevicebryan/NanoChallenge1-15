@@ -25,12 +25,12 @@ struct Option: Identifiable & Hashable {
 
 var quiz1 = Quiz(question: "Apa Genre Music 🎵 Favoritmu?",
                  options: [
-                   Option(label: "Jazz/RnB", description: "cocok untuk waktu santai, dan selalu ada di coffee shop😴", value: 0),
-                   Option(label: "Hip-hop/Rap", description: "eminem, kanye, snoop dogg adalah idolaku 🐕‍🦺", value: 3),
+                   Option(label: "Jazz/RnB", description: "cocok untuk nyantai di coffee shop 😴", value: 0),
+                   Option(label: "Hip-hop/Rap", description: "eminem, kanye, drake, dll. 🦉", value: 3),
                    Option(label: "Rock", description: "rock n roll adalah motto hidupku 🤘!", value: 2),
-                   Option(label: "Indie", description: "lagu anak senja yang kemana-mana bawa totebag 🌞", value: 4),
-                   Option(label: "Pop", description: "lagu yang pasti trend dan g pernah ngebosenin 🕺", value: 1)
-                 ], weight: 0.6)
+                   Option(label: "Indie", description: "lagu andalan anak senja... 🌞", value: 4),
+                   Option(label: "Pop", description: "lagu yang trendy dan gak pernah salah 🕺!", value: 1)
+                 ], weight: 0.5)
 
 var quiz2 = Quiz(question: "Apa Genre Film 🍿 Favoritmu?",
                  options: [
@@ -48,7 +48,7 @@ var quiz3 = Quiz(question: "Jenis Makanan 🍜 Apa Yang Paling Kamu Suka?",
                    Option(label: "Manis", description: "coklat, permen, caramel 🍩", value: 0),
                    Option(label: "Asem", description: "lemon, jeruk, rujak 🍋", value: 1),
                    Option(label: "Pahit", description: "kopi, teh tawar, matcha ☕️", value: 4)
-                 ], weight: 0.8)
+                 ], weight: 0.6)
 
 var quiz4 = Quiz(question: "App 📱 Mana Yang Paling Sering Kamu Pakai?",
                  options: [
@@ -57,7 +57,7 @@ var quiz4 = Quiz(question: "App 📱 Mana Yang Paling Sering Kamu Pakai?",
                    Option(label: "Instagram", description: "jawaban sejuta umat", value: 3),
                    Option(label: "TikTok", description: "kaum rebahan yang tergabut", value: 4),
                    Option(label: "YouTube", description: "kerjaannya nontonin Close the Door", value: 1)
-                 ], weight: 0.3)
+                 ], weight: 0.35)
 
 var quiz5 = Quiz(question: "Olahraga 🏀 Apa Yang Paling Kamu Suka?",
                  options: [
@@ -66,7 +66,7 @@ var quiz5 = Quiz(question: "Olahraga 🏀 Apa Yang Paling Kamu Suka?",
                    Option(label: "Lari", description: "berlari menjauh dari realita ya 🗿", value: 2),
                    Option(label: "Cycling", description: "iya deh yang sepedanya mahal", value: 0),
                    Option(label: "Berkelompok", description: "basket, sepakbola, ya yang begituan deh pokoknya", value: 3)
-                 ], weight: 0.3)
+                 ], weight: 0.25)
 
 /// snackScore represent the score for each snack, highest will be shown in result.
 /// each idx represent a snack:
