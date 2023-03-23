@@ -34,7 +34,7 @@ var lays = Result(id: 2,
 
 var balado = Result(id: 3,
                     snack: "Stick Balado",
-                    snackImage: Image("stick balado"), factImage: Image("fact-stickbalado"),
+                    snackImage: Image("stick balado"), factImage: Image("fact-balado"),
                     body: "Open-minded dan berani ambil resiko. Selain itu kamu juga strong dan independent! Biasanya penuh dengan energi.", bodyImage: Image("body-cheetos"))
 
 var kopiko = Result(id: 4,

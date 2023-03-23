@@ -25,29 +25,29 @@ struct Option: Identifiable & Hashable {
 
 var quiz1 = Quiz(question: "Apa Genre Music 🎵 Favoritmu?",
                  options: [
-                   Option(label: "Jazz", description: "sakin santuynya saya pun sampe ngantuk 😴", value: 0),
-                   Option(label: "Rap/Hip-hop", description: "g ngerti dia ngomong apa, tapi dengerin aja dah", value: 3),
+                   Option(label: "Jazz/RnB", description: "cocok untuk waktu santai, dan selalu ada di coffee shop😴", value: 0),
+                   Option(label: "Hip-hop/Rap", description: "eminem, kanye, snoop dogg adalah idolaku 🐕‍🦺", value: 3),
                    Option(label: "Rock", description: "rock n roll adalah motto hidupku 🤘!", value: 2),
-                   Option(label: "Indie", description: "anak senja banget ya 🌞", value: 4),
-                   Option(label: "Pop", description: "mainstream banget sih, tapi yaudah lah ya...", value: 1)
+                   Option(label: "Indie", description: "lagu anak senja yang kemana-mana bawa totebag 🌞", value: 4),
+                   Option(label: "Pop", description: "lagu yang pasti trend dan g pernah ngebosenin 🕺", value: 1)
                  ], weight: 0.6)
 
-var quiz2 = Quiz(question: "Apa Genre Film 🎬 Favoritmu?",
+var quiz2 = Quiz(question: "Apa Genre Film 🍿 Favoritmu?",
                  options: [
-                   Option(label: "Comedy", description: "apel, apel apa yang suka marah?", value: 1),
-                   Option(label: "Horror", description: "tapi pas nonton matanya ditutupin", value: 3),
-                   Option(label: "Action", description: "pasti suka nonton 0-7, eh 007 maksudnya", value: 2),
-                   Option(label: "Documentary", description: "no komen sih.", value: 4),
-                   Option(label: "Romance", description: "drakor adalah jalan ninjaku!", value: 0)
+                   Option(label: "Comedy", description: "Mr.Bean, Dumb n Dumber, Malam Minggu Miko 🤣", value: 1),
+                   Option(label: "Horror", description: "Insidious, Anabelle, Pengabdi Setan 👻", value: 3),
+                   Option(label: "Action", description: "Mission Impossible, John Wick, Transformers 🔫", value: 2),
+                   Option(label: "Documentary", description: "MH370, Drive to Survive, The Last Dance 📽️", value: 4),
+                   Option(label: "Romance", description: "Titanic, Goblin, Her ❤️‍🔥", value: 0)
                  ], weight: 0.4)
 
 var quiz3 = Quiz(question: "Jenis Makanan 🍜 Apa Yang Paling Kamu Suka?",
                  options: [
-                   Option(label: "Pedas", description: "paling g bisa makan kalo g ada sambel", value: 3),
-                   Option(label: "Asin", description: "air laut favoritku!", value: 2),
-                   Option(label: "Manis", description: "🎵Hati-Hati Di-abetes🎵 -Tulus", value: 0),
-                   Option(label: "Asem", description: "ngilu!", value: 1),
-                   Option(label: "Pahit", description: "pasti tadinya jawab indie...", value: 4)
+                   Option(label: "Pedas", description: "samyang, balado, sambel 🌶️", value: 3),
+                   Option(label: "Asin", description: "pokokny harus ada micin/garam 🧂", value: 2),
+                   Option(label: "Manis", description: "coklat, permen, caramel 🍩", value: 0),
+                   Option(label: "Asem", description: "lemon, jeruk, rujak 🍋", value: 1),
+                   Option(label: "Pahit", description: "kopi, teh tawar, matcha ☕️", value: 4)
                  ], weight: 0.8)
 
 var quiz4 = Quiz(question: "App 📱 Mana Yang Paling Sering Kamu Pakai?",
