@@ -59,11 +59,27 @@ func getUserSnack(answers: [Double], results: [Result], userSnack: inout Result)
   print("Congratulations your snack is: \(userSnack.snack)")
 }
 
+func getMatchingPlayers(players: FetchedResults<Player>, snack: Result) -> [Player] {
+  let matchingPlayers = players.filter {
+    $0.snack == snack.snack
+  }
+  return matchingPlayers
+}
+
 func addScore(quiz: Quiz, selectedOption: Option, answers: inout [Double]) {
   answers[selectedOption.value] += quiz.weight
   print("added \(quiz.weight) to \(answers)")
 }
 
+func getFinalScore(quizzes: [Quiz], selectedOptions: [Option], answers: inout [Double]) {
+  for (quiz, selectedOption) in zip(quizzes, selectedOptions) {
+    answers[selectedOption.value] += quiz.weight
+  }
+
+  print("Your Final Score: \(answers)")
+}
+
 func resetAnswer(answers: inout [Double]) {
   answers = [0.0, 0.0, 0.0, 0.0, 0.0]
+  print("ANSER RESETTED: \(answers)")
 }

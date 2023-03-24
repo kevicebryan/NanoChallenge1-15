@@ -19,6 +19,7 @@
 		2D58C14F29C5F45500BBF24A /* QuizCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D58C14E29C5F45500BBF24A /* QuizCardView.swift */; };
 		2DCA2C9929C9B0B400A2E7A7 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCA2C9829C9B0B400A2E7A7 /* DataController.swift */; };
 		2DCA2C9C29C9B2FB00A2E7A7 /* PersonalSnack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DCA2C9A29C9B2FB00A2E7A7 /* PersonalSnack.xcdatamodeld */; };
+		2DCFC86429CD7458003604F8 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFC86329CD7458003604F8 /* Music.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		2D58C14E29C5F45500BBF24A /* QuizCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCardView.swift; sourceTree = "<group>"; };
 		2DCA2C9829C9B0B400A2E7A7 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		2DCA2C9B29C9B2FB00A2E7A7 /* PersonalSnack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalSnack.xcdatamodel; sourceTree = "<group>"; };
+		2DCFC86329CD7458003604F8 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		2DF0472829CD98F600C26D47 /* Your-Personal-Snack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Your-Personal-Snack-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		2D58C13729C5DCED00BBF24A /* Your Personal Snack */ = {
 			isa = PBXGroup;
 			children = (
+				2DF0472829CD98F600C26D47 /* Your-Personal-Snack-Info.plist */,
 				2DCA2C9A29C9B2FB00A2E7A7 /* PersonalSnack.xcdatamodeld */,
 				2DCA2C9829C9B0B400A2E7A7 /* DataController.swift */,
 				2D58C13829C5DCED00BBF24A /* Your_Personal_SnackApp.swift */,
@@ -77,6 +81,7 @@
 				2D58C14C29C5F42E00BBF24A /* ResultView.swift */,
 				2D5438D129C6F7F30034CE7B /* Quiz.swift */,
 				2D5438CD29C6F7090034CE7B /* Result.swift */,
+				2DCFC86329CD7458003604F8 /* Music.swift */,
 				2D58C13C29C5DCEE00BBF24A /* Assets.xcassets */,
 				2D58C13E29C5DCEE00BBF24A /* Preview Content */,
 			);
@@ -168,6 +173,7 @@
 				2DCA2C9C29C9B2FB00A2E7A7 /* PersonalSnack.xcdatamodeld in Sources */,
 				2D58C13B29C5DCED00BBF24A /* ContentView.swift in Sources */,
 				2DCA2C9929C9B0B400A2E7A7 /* DataController.swift in Sources */,
+				2DCFC86429CD7458003604F8 /* Music.swift in Sources */,
 				2D5438CE29C6F7090034CE7B /* Result.swift in Sources */,
 				2D5438D229C6F7F30034CE7B /* Quiz.swift in Sources */,
 				2D58C13929C5DCED00BBF24A /* Your_Personal_SnackApp.swift in Sources */,
@@ -302,6 +308,8 @@
 				DEVELOPMENT_TEAM = DVSPNNP5A3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Your-Personal-Snack-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -331,6 +339,8 @@
 				DEVELOPMENT_TEAM = DVSPNNP5A3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Your-Personal-Snack-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

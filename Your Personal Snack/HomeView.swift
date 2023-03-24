@@ -19,7 +19,7 @@ struct HomeView: View {
           .edgesIgnoringSafeArea(.all)
 
         Image("oval-background").padding(.top, 260.0).edgesIgnoringSafeArea(.bottom)
-        Image("lays-background").edgesIgnoringSafeArea(.bottom).padding(.top, 680)
+        Image("lays-background").edgesIgnoringSafeArea(.bottom).padding(.top, 700)
 
         VStack {
           VStack(alignment: .center) {
@@ -37,7 +37,7 @@ struct HomeView: View {
             .textInputAutocapitalization(.never)
             .disableAutocorrection(true)
             .textFieldStyle(OvalTextFieldStyle())
-            .frame(width: 332)
+            .frame(width: 332).foregroundColor(.black)
 
           }.padding(.vertical, 20.0).padding(.bottom, 40)
 

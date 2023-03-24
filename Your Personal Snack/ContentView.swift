@@ -14,12 +14,14 @@ struct ContentView: View {
   /// 0 --> Beng Beng
   /// 1 --> Nano Nano
   /// 2 --> Lays
-  /// 3 --> BaladoÍ
+  /// 3 --> Balado
   /// 4 --> Kopiko
   var quizzes: [Quiz] = [quiz1, quiz2, quiz3, quiz4, quiz5]
 
   var body: some View {
-    HomeView()
+    HomeView().onAppear {
+      playBackgroundSound(sound: "backgroundMusic2", type: "mp3")
+    }.preferredColorScheme(.light)
   }
 }
 

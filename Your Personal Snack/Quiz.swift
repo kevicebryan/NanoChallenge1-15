@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Quiz: Identifiable {
+struct Quiz: Identifiable & Hashable {
   let id = UUID()
   var question: String
   var options: [Option]
@@ -23,6 +23,8 @@ struct Option: Identifiable & Hashable {
   var value: Int
 }
 
+var emptyOption = Option(label: "", description: "", value: 0)
+
 var quiz1 = Quiz(question: "Apa Genre Music 🎵 Favoritmu?",
                  options: [
                    Option(label: "Jazz/RnB", description: "cocok untuk nyantai di coffee shop 😴", value: 0),
@@ -34,7 +36,7 @@ var quiz1 = Quiz(question: "Apa Genre Music 🎵 Favoritmu?",
 
 var quiz2 = Quiz(question: "Apa Genre Film 🍿 Favoritmu?",
                  options: [
-                   Option(label: "Comedy", description: "Mr.Bean, Dumb n Dumber, Malam Minggu Miko 🤣", value: 1),
+                   Option(label: "Comedy", description: "Mr.Bean, Dumb n Dumber, dll. 🤣", value: 1),
                    Option(label: "Horror", description: "Insidious, Anabelle, Pengabdi Setan 👻", value: 3),
                    Option(label: "Action", description: "Mission Impossible, John Wick, Transformers 🔫", value: 2),
                    Option(label: "Documentary", description: "MH370, Drive to Survive, The Last Dance 📽️", value: 4),
@@ -61,11 +63,11 @@ var quiz4 = Quiz(question: "App 📱 Mana Yang Paling Sering Kamu Pakai?",
 
 var quiz5 = Quiz(question: "Olahraga 🏀 Apa Yang Paling Kamu Suka?",
                  options: [
-                   Option(label: "Gym", description: "gym terus tapi g kedot-kedot (cuaks)", value: 4),
-                   Option(label: "Renang", description: "biar g perlu mandi lagi", value: 1),
+                   Option(label: "Gym", description: "gym terus tapi g kedot-kedot 🏋️", value: 4),
+                   Option(label: "Renang", description: "biar g perlu mandi lagi 🏊", value: 1),
                    Option(label: "Lari", description: "berlari menjauh dari realita ya 🗿", value: 2),
                    Option(label: "Cycling", description: "iya deh yang sepedanya mahal", value: 0),
-                   Option(label: "Berkelompok", description: "basket, sepakbola, ya yang begituan deh pokoknya", value: 3)
+                   Option(label: "Berkelompok", description: "basket, sepakbola, dll. ⚽️", value: 3)
                  ], weight: 0.25)
 
 /// snackScore represent the score for each snack, highest will be shown in result.
