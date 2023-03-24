@@ -20,6 +20,8 @@
 		2DCA2C9929C9B0B400A2E7A7 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCA2C9829C9B0B400A2E7A7 /* DataController.swift */; };
 		2DCA2C9C29C9B2FB00A2E7A7 /* PersonalSnack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DCA2C9A29C9B2FB00A2E7A7 /* PersonalSnack.xcdatamodeld */; };
 		2DCFC86429CD7458003604F8 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFC86329CD7458003604F8 /* Music.swift */; };
+		2DF0472C29CDA71D00C26D47 /* backgroundMusic1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DF0472A29CDA71C00C26D47 /* backgroundMusic1.mp3 */; };
+		2DF0472D29CDA71D00C26D47 /* backgroundMusic2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DF0472B29CDA71D00C26D47 /* backgroundMusic2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		2DCA2C9B29C9B2FB00A2E7A7 /* PersonalSnack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalSnack.xcdatamodel; sourceTree = "<group>"; };
 		2DCFC86329CD7458003604F8 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		2DF0472829CD98F600C26D47 /* Your-Personal-Snack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Your-Personal-Snack-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2DF0472A29CDA71C00C26D47 /* backgroundMusic1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic1.mp3; sourceTree = "<group>"; };
+		2DF0472B29CDA71D00C26D47 /* backgroundMusic2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic2.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		2D58C13729C5DCED00BBF24A /* Your Personal Snack */ = {
 			isa = PBXGroup;
 			children = (
+				2DF0472929CDA6DC00C26D47 /* Sounds */,
 				2DF0472829CD98F600C26D47 /* Your-Personal-Snack-Info.plist */,
 				2DCA2C9A29C9B2FB00A2E7A7 /* PersonalSnack.xcdatamodeld */,
 				2DCA2C9829C9B0B400A2E7A7 /* DataController.swift */,
@@ -94,6 +99,15 @@
 				2D58C13F29C5DCEE00BBF24A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2DF0472929CDA6DC00C26D47 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2DF0472A29CDA71C00C26D47 /* backgroundMusic1.mp3 */,
+				2DF0472B29CDA71D00C26D47 /* backgroundMusic2.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D58C14029C5DCEE00BBF24A /* Preview Assets.xcassets in Resources */,
+				2DF0472D29CDA71D00C26D47 /* backgroundMusic2.mp3 in Resources */,
+				2DF0472C29CDA71D00C26D47 /* backgroundMusic1.mp3 in Resources */,
 				2D58C13D29C5DCEE00BBF24A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
